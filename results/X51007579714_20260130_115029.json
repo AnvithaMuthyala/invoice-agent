@@ -1,0 +1,15 @@
+{
+  "workflow": {
+    "parser_used": "ocr",
+    "insights": [
+      "The most expensive item on the invoice is the NASI KANDAR, priced at RM 7.80, indicating that high-value menu items are contributing significantly to the total revenue.",
+      "The customer purchased multiple quantities of certain items, such as TEH TARIK (3 units) and AYAM GORENG (4 units), suggesting that these items are popular among customers and could be considered for promotional offers or bundle deals.",
+      "The invoice includes two identical orders of INDONMIE DOUBLE, one with a quantity of 1 and another with an unclear quantity (\"\uff1f\"), which may indicate an error in ordering or inventory management that needs to be addressed.",
+      "The total bill comes out to be RM 61.70, and the customer paid RM 62.00 in cash, resulting in a change of RM 0.30, which is a relatively small amount and may not be worth the cashier's time to handle, potentially streamlining the payment process.",
+      "The GST (Goods and Services Tax) analysis shows that the total tax amount is RM 0.00, indicating that the restaurant is exempt from GST or all items on the menu are zero-rated, which could impact pricing strategies and revenue projections."
+    ]
+  },
+  "evaluation": {
+    "error": "Failed to extract invoice text: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\\nPlease retry in 42.519093927s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}"
+  }
+}

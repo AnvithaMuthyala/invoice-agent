@@ -1,0 +1,52 @@
+[
+  {
+    "file": "batch1-0419.jpg",
+    "insights_count": 7,
+    "factual_completeness": 60.7,
+    "accuracy": 71.4,
+    "coverage": 50,
+    "quality": 3.8,
+    "parsing_consistency": 100,
+    "overall": 82.78
+  },
+  {
+    "file": "batch1-0421.jpg",
+    "insights_count": 7,
+    "factual_completeness": 59,
+    "accuracy": 71,
+    "coverage": 47,
+    "quality": 3.5,
+    "parsing_consistency": 100,
+    "overall": 79.85
+  },
+  {
+    "file": "batch1-0423.jpg",
+    "insights_count": 7,
+    "factual_completeness": 52.7,
+    "accuracy": 42.9,
+    "coverage": 62.5,
+    "quality": 0,
+    "parsing_consistency": 0,
+    "overall": 21.08
+  },
+  {
+    "file": "X51007433809.jpg",
+    "insights_count": 5,
+    "factual_completeness": 76.5,
+    "accuracy": 80,
+    "coverage": 73,
+    "quality": 3.8,
+    "parsing_consistency": 96,
+    "overall": 87.9
+  },
+  {
+    "file": "X51007579714.jpg",
+    "insights_count": 5,
+    "factual_completeness": "N/A",
+    "accuracy": "N/A",
+    "coverage": "N/A",
+    "quality": "N/A",
+    "parsing_consistency": "N/A",
+    "overall": "N/A"
+  }
+]

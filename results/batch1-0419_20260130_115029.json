@@ -1,0 +1,231 @@
+{
+  "workflow": {
+    "parser_used": "ocr",
+    "insights": [
+      "The seller, Holloway, Ford and Smith, has invoiced a total of $365.13 to the client, Pena, Hernandez and Miller, with a VAT of 10% contributing $33.19 to the total amount.",
+      "The most expensive item on the invoice is the Garden Flower Carpet Quilted Bedroom Floor Princess Tapis Lace Rug Carpets, with a net price of $45.50 per unit and a total net worth of $91.00 for 2 units.",
+      "The client has purchased a total of 15 items across 7 different product categories, with the highest quantity being 5 units of the Hippie 3D Starry Sky Carpet Child Play Area Rug Kids Room Carpets Mat Home Decor.",
+      "The average net price per item is $47.99, indicating a relatively high-value purchase, with the majority of items falling in the $10-$50 price range.",
+      "The Rectangle Area Rug Wood Grain Carpet Mat for Living Room Bedr00m-180x60cm is the third most expensive item, with a net price of $32.81 per unit and a total net worth of $98.43 for 3 units, suggesting a bulk purchase discount may be applicable.",
+      "The total net worth of the items before VAT is $331.94, which is approximately 91% of the total gross worth, indicating that the VAT rate of 10% has a significant impact on the final invoice amount.",
+      "The seller may consider offering discounts for bulk purchases, as the client has bought multiple units of several items, including 3 units of the Rectangle Area Rug and 2 units of the Garden Flower Carpet and Round Rug Carpet."
+    ]
+  },
+  "evaluation": {
+    "extracted_text": "**Invoice Details**\n\n*   **Invoice no:** 93300746\n*   **Date of issue:** 02/11/2013\n\n**Seller Information**\n\n*   **Name:** Holloway, Ford and Smith\n*   **Address:** 048 Brown Creek Apt. 631, New Jonathan, DC 38097\n*   **Tax Id:** 907-82-2792\n*   **IBAN:** GB28KLRK56290237567077\n\n**Client Information**\n\n*   **Name:** Pena, Hernandez and Miller\n*   **Address:** 566 Daniels Causeway, Leonardfurt, MI 40983\n*   **Tax Id:** 953-84-1487\n\n**Items**\n\n| No. | Description | Qty | UM | Net price | Net worth | VAT [%] | Gross worth |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 1. | Hippie 3D Starry Sky Carpet Child Play Area Rug Kids Room Carpets Mat Home Decor | 5,00 | each | 11,69 | 58,45 | 10% | 64,29 |\n| 2. | 3X5 Ft Cotton Chindi Rug Dining Room Carpet Floor Mat Handwoven Area Rug Throw | 1,00 | each | 17,85 | 17,85 | 10% | 19,64 |\n| 3. | Garden Flower Carpet Quilted Bedroom Floor Princess Tapis Lace Rug Carpets | 2,00 | each | 45,50 | 91,00 | 10% | 100,10 |\n| 4. | Imitation Wool Carpet Rugs Koala Panda Plush Living Room Blankets Non Slip Decor | 1,00 | each | 26,11 | 26,11 | 10% | 28,72 |\n| 5. | Round Rug Carpet For Living Room Decor Faux Fur Rugs Kids Room Long Plush Rugs | 2,00 | each | 9,87 | 19,74 | 10% | 21,71 |\n| 6. | Plush Carpet for Living Room Fluffy Rug Thick Bed Room Carpets Anti-slip Floor G | 1,00 | each | 20,36 | 20,36 | 10% | 22,40 |\n| 7. | Rectangle Area Rug Wood Grain Carpet Mat for Living Room Bedroom - 180x60cm | 3,00 | each | 32,81 | 98,43 | 10% | 108,27 |\n\n**Summary**\n\n| VAT [%] | Net worth | VAT | Gross worth |\n| :--- | :--- | :--- | :--- |\n| 10% | 331,94 | 33,19 | 365,13 |\n| **Total** | **$ 331,94** | **$ 33,19** | **$ 365,13** |",
+    "factual_completeness": {
+      "explanation": "The evaluation shows that the insights capture the major financial summary points and specific details of about half of the line items. However, several critical 'metadata' fields such as the Invoice Number, Date of Issue, Seller Address, Seller Tax ID, Seller IBAN, Client Address, and Client Tax ID are entirely absent. Factually, five out of the seven insights are correct. Insight 4 contains a completely hallucinated average price calculation ($47.99), whereas the true average net price is approximately $23.45 (per type) or $22.13 (per unit). Insight 5 correctly identifies the price and quantity for Item 7 but incorrectly ranks it as the 'third most expensive' item; it is the second most expensive by unit price and the most expensive by total net worth.",
+      "data_points_found": [
+        "Invoice Number",
+        "Date of Issue",
+        "Seller Name",
+        "Seller Address",
+        "Seller Tax ID",
+        "Seller IBAN",
+        "Client Name",
+        "Client Address",
+        "Client Tax ID",
+        "Line Item 1 (Hippie 3D Starry Sky Carpet)",
+        "Line Item 2 (3X5 Ft Cotton Chindi Rug)",
+        "Line Item 3 (Garden Flower Carpet)",
+        "Line Item 4 (Imitation Wool Carpet)",
+        "Line Item 5 (Round Rug Carpet)",
+        "Line Item 6 (Plush Carpet)",
+        "Line Item 7 (Rectangle Area Rug)",
+        "Net Total (Subtotal)",
+        "VAT Rate",
+        "VAT Amount",
+        "Gross Total"
+      ],
+      "covered": [
+        "Seller Name",
+        "Client Name",
+        "Line Item 1 (Hippie 3D Starry Sky Carpet)",
+        "Line Item 3 (Garden Flower Carpet)",
+        "Line Item 5 (Round Rug Carpet)",
+        "Line Item 7 (Rectangle Area Rug)",
+        "Net Total (Subtotal)",
+        "VAT Rate",
+        "VAT Amount",
+        "Gross Total"
+      ],
+      "missing": [
+        "Invoice Number",
+        "Date of Issue",
+        "Seller Address",
+        "Seller Tax ID",
+        "Seller IBAN",
+        "Client Address",
+        "Client Tax ID",
+        "Line Item 2 (3X5 Ft Cotton Chindi Rug)",
+        "Line Item 4 (Imitation Wool Carpet)",
+        "Line Item 6 (Plush Carpet)"
+      ],
+      "per_insight": [
+        {
+          "insight": 1,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 2,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 3,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 4,
+          "label": "hallucinated",
+          "issue": "The claim 'average net price per item is $47.99' is incorrect; the actual average is roughly half that amount."
+        },
+        {
+          "insight": 5,
+          "label": "partial",
+          "issue": "Incorrect ranking: 'third most expensive item'. By unit price it is 2nd, and by net worth it is 1st. Also contains a typo 'Bedr00m'."
+        },
+        {
+          "insight": 6,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 7,
+          "label": "factual",
+          "issue": null
+        }
+      ],
+      "completeness_score": 50,
+      "accuracy_score": 71.4,
+      "score": 60.7
+    },
+    "quality": {
+      "explanation": "The insights are exceptionally specific and clear, referencing exact names and figures from the invoice. They cover a diverse range of aspects from tax impact to item-level details. Actionability is high as the content suggests business strategies (bulk discounts) and calculates statistical averages rather than just restating the raw data, though some early points remain descriptive.",
+      "clarity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "specificity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "diversity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "actionability": {
+        "label": "good",
+        "score": 3
+      },
+      "score": 3.8
+    },
+    "parsing_consistency": {
+      "explanation": "The two sources show complete agreement on all key data points including invoice number, dates, seller/client details, and all financial totals. While Source B (OCR) exhibits minor formatting artifacts (e.g., missing spaces in vendor name/address and character substitutions like 'Bedr00m' for 'Bedroom'), these do not constitute mismatches as the underlying data and numeric values are identical.",
+      "fields_compared": [
+        "invoice_number",
+        "date_of_issue",
+        "seller_name",
+        "seller_address",
+        "seller_tax_id",
+        "seller_iban",
+        "client_name",
+        "client_address",
+        "client_tax_id",
+        "item_1_details",
+        "item_2_details",
+        "item_3_details",
+        "item_4_details",
+        "item_5_details",
+        "item_6_details",
+        "item_7_details",
+        "total_net_worth",
+        "total_vat_amount",
+        "total_gross_worth"
+      ],
+      "matches": [
+        {
+          "field": "invoice_number",
+          "value": "93300746"
+        },
+        {
+          "field": "date_of_issue",
+          "value": "02/11/2013"
+        },
+        {
+          "field": "seller_name",
+          "value": "Holloway, Ford and Smith"
+        },
+        {
+          "field": "seller_address",
+          "value": "048 Brown Creek Apt. 631, New Jonathan, DC 38097"
+        },
+        {
+          "field": "seller_tax_id",
+          "value": "907-82-2792"
+        },
+        {
+          "field": "seller_iban",
+          "value": "GB28KLRK56290237567077"
+        },
+        {
+          "field": "client_name",
+          "value": "Pena, Hernandez and Miller"
+        },
+        {
+          "field": "client_address",
+          "value": "566 Daniels Causeway, Leonardfurt, MI 40983"
+        },
+        {
+          "field": "client_tax_id",
+          "value": "953-84-1487"
+        },
+        {
+          "field": "item_1_details",
+          "value": "Hippie 3D Starry Sky Carpet... (Qty: 5.00, Net: 58,45)"
+        },
+        {
+          "field": "item_2_details",
+          "value": "3X5 Ft Cotton Chindi Rug... (Qty: 1.00, Net: 17,85)"
+        },
+        {
+          "field": "item_3_details",
+          "value": "Garden Flower Carpet Quilted... (Qty: 2.00, Net: 91,00)"
+        },
+        {
+          "field": "item_4_details",
+          "value": "Imitation Wool Carpet Rugs... (Qty: 1.00, Net: 26,11)"
+        },
+        {
+          "field": "item_5_details",
+          "value": "Round Rug Carpet For Living Room... (Qty: 2.00, Net: 19,74)"
+        },
+        {
+          "field": "item_6_details",
+          "value": "Plush Carpet for Living Room... (Qty: 1.00, Net: 20,36)"
+        },
+        {
+          "field": "item_7_details",
+          "value": "Rectangle Area Rug Wood Grain... (Qty: 3.00, Net: 98,43)"
+        },
+        {
+          "field": "total_net_worth",
+          "value": "331,94"
+        },
+        {
+          "field": "total_vat_amount",
+          "value": "33,19"
+        },
+        {
+          "field": "total_gross_worth",
+          "value": "365,13"
+        }
+      ],
+      "mismatches": [],
+      "score": 100
+    },
+    "overall_score": 82.78
+  }
+}

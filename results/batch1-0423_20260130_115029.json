@@ -1,0 +1,111 @@
+{
+  "workflow": {
+    "parser_used": "ocr",
+    "insights": [
+      "The top-selling item on this invoice is the New Sony Playstation 4 Slim 1TB 3 Game Bundle Console, with 5 units sold at $399.99 each, totaling $1999.95 in net worth and $2199.95 in gross worth.",
+      "The total gross worth of all items sold is $5597.66, with a 10% VAT rate applied, resulting in $508.88 in VAT and $5088.78 in net worth.",
+      "The Nintendo Wii White Console and Xbox One X 1TB 4K Black Video Game Console are the second and third most expensive items on the invoice, with net prices of $99.99 and $419.99 per unit, respectively.",
+      "The client, Barnes PLC, has purchased a total of 22 gaming consoles across 6 different models, indicating a significant investment in gaming technology.",
+      "The average net price per unit across all items on the invoice is approximately $231.68, suggesting a mix of both low-end and high-end gaming consoles.",
+      "The Sony PlayStation 2 and Nintendo DS consoles are the lowest-priced items on the invoice, with net prices of $119.99 and $6.99 per unit, respectively, indicating potential opportunities for bulk sales or discounts.",
+      "The total net worth of the Playstation consoles (PS2 and PS4) sold is $2359.92, accounting for approximately 46% of the total net worth of all items sold."
+    ]
+  },
+  "evaluation": {
+    "extracted_text": "Based on the provided image, here is the complete extraction of all text and data from the invoice:\n\n### **General Invoice Information**\n*   **Invoice no:** 32530432\n*   **Date of issue:** 11/11/2014\n\n---\n\n### **Seller Information**\n*   **Name:** Smith, Gonzalez and Wallace\n*   **Address:** 517 Drake Meadow, New Seanburgh, TX 46774\n*   **Tax Id:** 938-70-7271\n*   **IBAN:** GB37HJCH03964179060142\n\n---\n\n### **Client Information**\n*   **Name:** Barnes PLC\n*   **Address:** 91305 Laura Street Apt. 439, Matthewsmouth, NJ 19408\n*   **Tax Id:** 915-91-7687\n\n---\n\n### **Line Items (ITEMS)**\n\n| No. | Description | Qty | UM | Net price | Net worth | VAT [%] | Gross worth |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 1. | Sony PlayStation2 SCPH-50000 TSS silyer Console JP GAME PS2 Japan tested working | 3,00 | each | 119,99 | 359,97 | 10% | 395,97 |\n| 2. | B397 Nintendo DSi console Red Japan NDS x | 3,00 | each | 6,99 | 20,97 | 10% | 23,07 |\n| 3. | Super Nintendo SNES System Console Controller & Cables - SNS-001 + 3 Games | 2,00 | each | 103,99 | 207,98 | 10% | 228,78 |\n| 4. | Nintendo Wii White Console RVL-001 Bundle Game Cube Compatible Controllers senso | 4,00 | each | 99,99 | 399,96 | 10% | 439,96 |\n| 5. | New Sony Playstation 4 Slim 1TB 3 Game Bundle Console. Sealed!!! | 5,00 | each | 399,99 | 1 999,95 | 10% | 2 199,95 |\n| 6. | Xbox One X 1TB 4K Black Video Game Console System - FACTORY SEALED Brand NEW | 5,00 | each | 419,99 | 2 099,95 | 10% | 2 309,95 |\n\n---\n\n### **SUMMARY**\n\n| VAT [%] | Net worth | VAT | Gross worth |\n| :--- | :--- | :--- | :--- |\n| 10% | 5 088,78 | 508,88 | 5 597,66 |\n\n*   **Total Net worth:** $ 5 088,78\n*   **Total VAT:** $ 508,88\n*   **Total Gross worth:** $ 5 597,66",
+    "factual_completeness": {
+      "explanation": "The evaluation shows that while the insights capture the core financial totals and quantity sums, they struggle significantly with comparative rankings and mathematical accuracy. \n\n1. **Completeness**: The insights cover approximately 62.5% of the key data points. They successfully reference the client name, line items, quantities, unit prices, and all summary totals (Net, VAT, Gross). However, they entirely omit the invoice number, date of issue, seller information (name, address, tax ID, IBAN), and client-specific tax/address details.\n\n2. **Factual Accuracy**: Only 3 out of 7 insights are fully factual (Insights 2, 4, and 7). \n- Insight 1 is inaccurate because it labels the PS4 as 'the' top-selling item, even though the Xbox One X generated more revenue ($2,099.95 vs $1,999.95) and matched its quantity.\n- Insight 3 incorrectly ranks the items: the Xbox is the 1st most expensive and the Wii is the 5th, not 2nd and 3rd.\n- Insight 5 provides an incorrect average net price ($231.68), whereas the calculated average based on the invoice totals ($5,088.78 / 22 units) is $231.31.\n- Insight 6 claims the PS2 is one of the two lowest-priced items ($119.99), but the Wii ($99.99) and SNES ($103.99) are both cheaper.",
+      "data_points_found": [
+        "Invoice no: 32530432",
+        "Date of issue: 11/11/2014",
+        "Seller Name: Smith, Gonzalez and Wallace",
+        "Seller Address: 517 Drake Meadow, New Seanburgh, TX 46774",
+        "Seller Tax Id: 938-70-7271",
+        "Seller IBAN: GB37HJCH03964179060142",
+        "Client Name: Barnes PLC",
+        "Client Address: 91305 Laura Street Apt. 439, Matthewsmouth, NJ 19408",
+        "Client Tax Id: 915-91-7687",
+        "Line Item Descriptions",
+        "Line Item Quantities",
+        "Line Item Unit Prices",
+        "Line Item Net Worths",
+        "Line Item Gross Worths",
+        "VAT Rate: 10%",
+        "Total Net Worth: $5,088.78",
+        "Total VAT: $508.88",
+        "Total Gross Worth: $5,597.66"
+      ],
+      "covered": [
+        "Client Name: Barnes PLC",
+        "Line Item Descriptions",
+        "Line Item Quantities",
+        "Line Item Unit Prices",
+        "Line Item Net Worths",
+        "Line Item Gross Worths",
+        "VAT Rate: 10%",
+        "Total Net Worth: $5,088.78",
+        "Total VAT: $508.88",
+        "Total Gross Worth: $5,597.66"
+      ],
+      "missing": [
+        "Invoice no: 32530432",
+        "Date of issue: 11/11/2014",
+        "Seller Name: Smith, Gonzalez and Wallace",
+        "Seller Address: 517 Drake Meadow, New Seanburgh, TX 46774",
+        "Seller Tax Id: 938-70-7271",
+        "Seller IBAN: GB37HJCH03964179060142",
+        "Client Address: 91305 Laura Street Apt. 439, Matthewsmouth, NJ 19408",
+        "Client Tax Id: 915-91-7687"
+      ],
+      "per_insight": [
+        {
+          "insight": 1,
+          "label": "partial",
+          "issue": "The claim that the PS4 is 'the top-selling item' is inaccurate as the Xbox One X generated higher revenue ($2,099.95 vs $1,999.95) and matched its quantity."
+        },
+        {
+          "insight": 2,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 3,
+          "label": "partial",
+          "issue": "Rankings are incorrect; based on unit prices, the Xbox One X ($419.99) is 1st and the Nintendo Wii ($99.99) is 5th, not 2nd and 3rd."
+        },
+        {
+          "insight": 4,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 5,
+          "label": "hallucinated",
+          "issue": "The average net price per unit is $231.31 ($5,088.78 divided by 22), not $231.68."
+        },
+        {
+          "insight": 6,
+          "label": "partial",
+          "issue": "The PS2 ($119.99) is the 4th cheapest item; it is not one of the two lowest-priced consoles as the Wii ($99.99) and SNES ($103.99) are cheaper."
+        },
+        {
+          "insight": 7,
+          "label": "factual",
+          "issue": null
+        }
+      ],
+      "completeness_score": 62.5,
+      "accuracy_score": 42.9,
+      "score": 52.7
+    },
+    "quality": {
+      "error": "Judge failed: Server disconnected without sending a response.",
+      "score": 0
+    },
+    "parsing_consistency": {
+      "error": "Judge failed: [Errno 11001] getaddrinfo failed",
+      "score": 0
+    },
+    "overall_score": 21.08
+  }
+}

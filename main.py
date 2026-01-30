@@ -67,9 +67,12 @@ def main():
     print("EVALUATION")
     print("=" * 60)
     eval_data = result.get("evaluation", {})
-    print(f"Factual Completeness: {eval_data.get('factual_completeness', {}).get('score', 'N/A')}%")
-    print(f"Quality: {eval_data.get('quality', {}).get('score', 'N/A')}/10")
-    print(f"Parsing Consistency: {eval_data.get('parsing_consistency', {}).get('score', 'N/A')}%")
+    fc = eval_data.get("factual_completeness", {})
+    q = eval_data.get("quality", {})
+    pc = eval_data.get("parsing_consistency", {})
+    print(f"Factual Completeness: {fc.get('score', 'N/A')}% (accuracy: {fc.get('accuracy_score', 'N/A')}%, coverage: {fc.get('completeness_score', 'N/A')}%)")
+    print(f"Quality: {q.get('score', 'N/A')}/4 (clarity: {q.get('clarity', {}).get('label', 'N/A')}, specificity: {q.get('specificity', {}).get('label', 'N/A')}, diversity: {q.get('diversity', {}).get('label', 'N/A')}, actionability: {q.get('actionability', {}).get('label', 'N/A')})")
+    print(f"Parsing Consistency: {pc.get('score', 'N/A')}%")
     print(f"Overall: {eval_data.get('overall_score', 'N/A')}/100")
 
 

@@ -1,0 +1,233 @@
+{
+  "workflow": {
+    "parser_used": "ocr",
+    "insights": [
+      "The total invoice value, including GST, is RM 190.00, with a GST amount of RM 10.75, indicating a 6% GST rate applied to the purchase.",
+      "The payment for this invoice was made in cash, as indicated by the \"Payment Type: Cash\" field, suggesting that the customer may not have been offered or did not opt for a credit-based payment option.",
+      "The invoice includes a single item, \"OPENITEM2\", with a quantity of 2 and a unit price of RM 95.00, resulting in a subtotal of RM 190.00 before tax and discounts.",
+      "No discounts were applied to this invoice, as evidenced by the \"Discount\" and \"Extra Disc\" fields showing values of RM 0.00, which may indicate that the customer did not meet the necessary criteria for a discount or that no promotional offers were available at the time of purchase.",
+      "The invoice was generated on March 8, 2018, at 5:01 PM, and was printed on the same day, suggesting a relatively quick turnaround time for the transaction."
+    ]
+  },
+  "evaluation": {
+    "extracted_text": "Here is the extracted information from the tax invoice:\n\n### **Vendor Information**\n*   **Name:** SYARIKAT KAM LAI SEONG SDN BHD (Co No. 95156P)\n*   **Address:** NO. 1442, JALAN SK 11/5, SERI KEMBANGAN, 43300 SELANGOR\n*   **TEL:** 03-89486342\n*   **FAX:** 03-89586342\n*   **GST Reg. No.:** 001632722944\n*   **Insert by:** admin\n*   **Signature:** T.S. Hoh\n\n### **Invoice Details**\n*   **Payment Type:** Cash\n*   **Date:** 08-03-2018 05:01:12 PM\n*   **Document Type:** Tax Invoice\n*   **Invoice No.:** INV-37002\n\n### **Line Items**\n| ITEM | QTY | U.PRICE (RM) | TOTAL (RM) | TAX CODE |\n| :--- | :--- | :--- | :--- | :--- |\n| OPEN ITEM: 5lt Nippon Zinc Chromate | 2 | 95.00 | 190.00 | SR |\n\n### **Summary & Totals**\n*   **Item Count:** 2\n*   **Total:** 190.00\n*   **Discount:** 0.00\n*   **Extra Disc (0.00%):** 0.00\n*   **GST (6.00%):** 10.75\n*   **Bef. Rounding:** 190.00\n*   **Rounding Adj.:** 0.00\n*   **Total Including GST:** 190.00\n*   **Tendered:** 190.00\n\n### **GST Summary**\n| Description | Amount | Tax |\n| :--- | :--- | :--- |\n| SR (6.00%) | 179.25 | 10.75 |\n| **Total** | | **10.75** |\n\n### **Footer Details**\n*   **Print:** 08-Mar-18\n*   **Opened By:** admin\n*   **Receive By:** [Signature Area]",
+    "factual_completeness": {
+      "explanation": "The evaluation assessed the generated insights against the invoice data for completeness and factual accuracy. \n\n1. **Completeness**: I identified 11 key data points in the source invoice: Vendor Name, Invoice Number, Date, Payment Type, Line Item Description, Quantity, Unit Price, Subtotal, GST Amount/Rate, Total, and Discounts. The insights covered 8 of these points. They failed to mention the Vendor Name (Syarikat Kam Lai Seong Sdn Bhd) and the Invoice Number (INV-37002). Furthermore, while a line item was mentioned, its actual description ('5lt Nippon Zinc Chromate') was misidentified as 'OPENITEM2', effectively missing the correct line item data.\n\n2. **Factual Accuracy**: Four out of five insights are fully factual. Insight 3 is classified as 'partial' due to two errors: it hallucinated the item name as 'OPENITEM2' and incorrectly stated that the subtotal before tax was RM 190.00. According to the GST summary, RM 190.00 is the final total including tax, while the subtotal (taxable amount) is RM 179.25. All other insights regarding payment type, GST rates, discounts, and transaction dates are accurate.",
+      "data_points_found": [
+        "Vendor Name",
+        "Invoice Number",
+        "Invoice Date",
+        "Payment Type",
+        "Line Item Description",
+        "Quantity",
+        "Unit Price",
+        "Subtotal (Taxable Amount)",
+        "GST Amount/Rate",
+        "Total Including GST",
+        "Discounts"
+      ],
+      "covered": [
+        "Invoice Date",
+        "Payment Type",
+        "Quantity",
+        "Unit Price",
+        "Subtotal (Taxable Amount)",
+        "GST Amount/Rate",
+        "Total Including GST",
+        "Discounts"
+      ],
+      "missing": [
+        "Vendor Name",
+        "Invoice Number",
+        "Line Item Description"
+      ],
+      "per_insight": [
+        {
+          "insight": 1,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 2,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 3,
+          "label": "partial",
+          "issue": "Hallucinated the item name as 'OPENITEM2' instead of 'OPEN ITEM: 5lt Nippon Zinc Chromate'. It also incorrectly claimed the subtotal before tax was RM 190.00; RM 190.00 is the total including GST (the pre-tax subtotal is RM 179.25)."
+        },
+        {
+          "insight": 4,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 5,
+          "label": "factual",
+          "issue": null
+        }
+      ],
+      "completeness_score": 73,
+      "accuracy_score": 80,
+      "score": 76.5
+    },
+    "quality": {
+      "explanation": "The insights are exceptionally clear and specific, citing exact figures and fields from the invoice. They cover a diverse range of aspects from taxes to operational timing without redundancy. While the insights add interpretive value (going beyond simple restatement), the observations are relatively standard for an invoice analysis and do not reveal high-level strategic patterns.",
+      "clarity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "specificity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "diversity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "actionability": {
+        "label": "good",
+        "score": 3
+      },
+      "score": 3.8
+    },
+    "parsing_consistency": {
+      "explanation": "The reconciliation between Source A (Multimodal Vision) and Source B (OCR) shows a very high level of agreement across nearly all key data points including vendor details, invoice numbers, financial totals, and tax breakdowns. Both sources correctly identified the Vendor Name, Address, Contact Information, GST Registration Number, Invoice Number, Date, and all summary financial figures (Subtotal, GST, Rounding, and Total). The only significant mismatch occurs in the 'Line Item Description'. Source A extracted the text 'OPEN ITEM: 5lt Nippon Zinc Chromate' correctly, whereas the OCR in Source B struggled with the line item formatting, merging the quantity with the description ('OPENITEM2') and misreading 'Nippon' as 'oddin'. Additionally, minor formatting differences in dates (colons vs. periods) and spaces in the address are treated as matches per the instructions.",
+      "fields_compared": [
+        "Vendor Name",
+        "Vendor Address",
+        "Vendor Tel",
+        "Vendor Fax",
+        "GST Reg. No.",
+        "Payment Type",
+        "Invoice Date",
+        "Document Type",
+        "Invoice No.",
+        "Line Item Description",
+        "Line Item Qty",
+        "Line Item Unit Price",
+        "Line Item Total",
+        "Line Item Tax Code",
+        "Item Count (Summary)",
+        "Subtotal (Bef. Rounding)",
+        "Discount",
+        "GST (6.00%)",
+        "Rounding Adj.",
+        "Total Including GST",
+        "Tendered",
+        "GST Summary Base Amount",
+        "GST Summary Tax Amount",
+        "Insert By",
+        "Opened By"
+      ],
+      "matches": [
+        {
+          "field": "Vendor Name",
+          "value": "SYARIKAT KAM LAI SEONG SDN BHD (Co No. 95156P)"
+        },
+        {
+          "field": "Vendor Address",
+          "value": "NO. 1442, JALAN SK 11/5, SERI KEMBANGAN, 43300 SELANGOR"
+        },
+        {
+          "field": "Vendor Tel",
+          "value": "03-89486342"
+        },
+        {
+          "field": "Vendor Fax",
+          "value": "03-89586342"
+        },
+        {
+          "field": "GST Reg. No.",
+          "value": "001632722944"
+        },
+        {
+          "field": "Payment Type",
+          "value": "Cash"
+        },
+        {
+          "field": "Invoice Date",
+          "value": "08-03-2018 05:01:12 PM"
+        },
+        {
+          "field": "Document Type",
+          "value": "Tax Invoice"
+        },
+        {
+          "field": "Invoice No.",
+          "value": "INV-37002"
+        },
+        {
+          "field": "Line Item Qty",
+          "value": "2"
+        },
+        {
+          "field": "Line Item Unit Price",
+          "value": "95.00"
+        },
+        {
+          "field": "Line Item Total",
+          "value": "190.00"
+        },
+        {
+          "field": "Line Item Tax Code",
+          "value": "SR"
+        },
+        {
+          "field": "Item Count (Summary)",
+          "value": "2"
+        },
+        {
+          "field": "Subtotal (Bef. Rounding)",
+          "value": "190.00"
+        },
+        {
+          "field": "Discount",
+          "value": "0.00"
+        },
+        {
+          "field": "GST (6.00%)",
+          "value": "10.75"
+        },
+        {
+          "field": "Rounding Adj.",
+          "value": "0.00"
+        },
+        {
+          "field": "Total Including GST",
+          "value": "190.00"
+        },
+        {
+          "field": "Tendered",
+          "value": "190.00"
+        },
+        {
+          "field": "GST Summary Base Amount",
+          "value": "179.25"
+        },
+        {
+          "field": "GST Summary Tax Amount",
+          "value": "10.75"
+        },
+        {
+          "field": "Insert By",
+          "value": "admin"
+        },
+        {
+          "field": "Opened By",
+          "value": "admin"
+        }
+      ],
+      "mismatches": [
+        {
+          "field": "Line Item Description",
+          "source_a": "OPEN ITEM: 5lt Nippon Zinc Chromate",
+          "source_b": "OPENITEM2 ... oddin Zinc Chromate"
+        }
+      ],
+      "score": 96
+    },
+    "overall_score": 87.9
+  }
+}

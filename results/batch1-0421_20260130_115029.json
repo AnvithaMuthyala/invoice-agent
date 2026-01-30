@@ -1,0 +1,236 @@
+{
+  "workflow": {
+    "parser_used": "ocr",
+    "insights": [
+      "The YILONG handmade carpet (item 6) accounts for 91% of the total invoice value, with a gross worth of $15,840.00, indicating a significant investment in high-end flooring products.",
+      "The average VAT paid per item is $215.49, with the highest VAT amount paid for item 6, totaling $1,440.00, which is 96% of the total VAT paid.",
+      "The client, Mcbride-Sanchez, has purchased a total of 20 items, with the majority being area rugs and carpets, suggesting a large-scale renovation or decoration project.",
+      "Item 3, the Cartoon Rabbit Printed Round Carpet, has the second-highest net price per unit at $177.08, indicating a premium product with a significant price tag.",
+      "The total gross worth of the invoice is $16,537.65, with a VAT of 10% contributing $1,503.42 to the total, which is a significant tax burden for the client.",
+      "The seller, Stanley Group, has generated a substantial revenue from this single invoice, totaling $16,537.65, which could indicate a strong business relationship with the client or a large market demand for their products.",
+      "The diversity of items purchased, including rugs, carpets, and mats, suggests that the client is likely a business or an individual with a large space to decorate, such as a hotel, office, or luxury residence."
+    ]
+  },
+  "evaluation": {
+    "extracted_text": "Based on the provided image, here is the extracted information from the invoice:\n\n### **General Invoice Information**\n*   **Invoice no:** 52335893\n*   **Date of issue:** 09/30/2012\n\n---\n\n### **Seller and Client Details**\n| **Seller** | **Client** |\n| :--- | :--- |\n| **Stanley Group** | **Mcbride-Sanchez** |\n| 5487 Richard Track Suite 480 | 48923 Dominguez Locks Apt. 317 |\n| South Joseph, NC 41730 | Sarahberg, LA 20147 |\n| **Tax Id:** 921-84-3512 | **Tax Id:** 986-75-5185 |\n| **IBAN:** GB67VRGE08714906088983 | |\n\n---\n\n### **Line Items**\n| **No.** | **Description** | **Qty** | **UM** | **Net price** | **Net worth** | **VAT [%]** | **Gross worth** |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 1. | Leopard Printed Rug Skin Mat Leather Faux Fur Animals Area Rugs Home Carpets | 2,00 | each | 19,49 | 38,98 | 10% | 42,88 |\n| 2. | Fluffy Rugs Anti-slip Area Rug Dining Room Carpet Floor Mat Home Bedroom Decor ! | 2,00 | each | 4,99 | 9,98 | 10% | 10,98 |\n| 3. | Cartoon Rabbit Printed Round Carpet Area Rug Children Play Tent Floor Mat Rug | 2,00 | each | 177,08 | 354,16 | 10% | 389,58 |\n| 4. | 3D Swirl Print Optical Illusion Area Rug Carpet Floor Pad Non-slip Doormat Mats | 5,00 | each | 11,96 | 59,80 | 10% | 65,78 |\n| 5. | War Horse Series Small Large Long Floor Carpet Area Rugs Various Size Soft Rug | 4,00 | each | 36,30 | 145,20 | 10% | 159,72 |\n| 6. | YILONG 4'x6' All over Handmade Carpet Dining Room Hand Knotted Silk Rugs 082B | 4,00 | each | 3 600,00 | 14 400,00 | 10% | 15 840,00 |\n| 7. | Imitation Wool Carpet Rugs Koala Panda Plush Living Room Blankets Non Slip Decor | 1,00 | each | 26,11 | 26,11 | 10% | 28,72 |\n\n---\n\n### **Summary**\n| **VAT [%]** | **Net worth** | **VAT** | **Gross worth** |\n| :--- | :--- | :--- | :--- |\n| 10% | 15 034,23 | 1 503,42 | 16 537,65 |\n| **Total** | **$ 15 034,23** | **$ 1 503,42** | **$ 16 537,65** |",
+    "factual_completeness": {
+      "explanation": "The evaluation identified several missing data points and two insights with significant factual inaccuracies regarding calculations. \n\n1. **Completeness Analysis**: The insights cover vendor and client names, line item descriptions (selectively), total quantities, unit prices (selectively), VAT percentage, and final totals (Gross and VAT). However, they completely omit the invoice number, date of issue, both seller and client addresses, tax IDs, IBAN, the Unit of Measure (UM), line-level net worths, and the subtotal (Total Net Worth).\n\n2. **Accuracy Analysis**: Five of the seven insights are factual. Insight 1 claims that Item 6 accounts for 91% of the invoice value, while the actual calculation (15,840.00 / 16,537.65) shows it accounts for approximately 95.8%. Insight 2 claims the average VAT per item is $215.49; however, the actual average across the 7 line items is $214.77 ($1,503.42 / 7), and the average per individual unit is $75.17 ($1,503.42 / 20). The other insights (3, 4, 5, 6, 7) are supported by the invoice data.",
+      "data_points_found": [
+        "Invoice no: 52335893",
+        "Date of issue: 09/30/2012",
+        "Seller Name: Stanley Group",
+        "Seller Address: 5487 Richard Track Suite 480, South Joseph, NC 41730",
+        "Seller Tax Id: 921-84-3512",
+        "Seller IBAN: GB67VRGE08714906088983",
+        "Client Name: Mcbride-Sanchez",
+        "Client Address: 48923 Dominguez Locks Apt. 317, Sarahberg, LA 20147",
+        "Client Tax Id: 986-75-5185",
+        "Line Item Descriptions",
+        "Line Item Quantities",
+        "Line Item Unit of Measure (UM)",
+        "Line Item Net price (Unit price)",
+        "Line Item Net worth",
+        "Line Item VAT %",
+        "Line Item Gross worth",
+        "Summary Total Net worth",
+        "Summary Total VAT",
+        "Summary Total Gross worth"
+      ],
+      "covered": [
+        "Seller Name",
+        "Client Name",
+        "Line Item Descriptions",
+        "Line Item Quantities",
+        "Line Item Net price (Unit price)",
+        "Line Item VAT %",
+        "Line Item Gross worth",
+        "Summary Total VAT",
+        "Summary Total Gross worth"
+      ],
+      "missing": [
+        "Invoice no: 52335893",
+        "Date of issue: 09/30/2012",
+        "Seller Address",
+        "Seller Tax Id",
+        "Seller IBAN",
+        "Client Address",
+        "Client Tax Id",
+        "Line Item Unit of Measure (UM)",
+        "Line Item Net worth",
+        "Summary Total Net worth"
+      ],
+      "per_insight": [
+        {
+          "insight": 1,
+          "label": "partial",
+          "issue": "The claim that the item accounts for '91% of the total invoice value' is mathematically incorrect (actual: ~95.8%)."
+        },
+        {
+          "insight": 2,
+          "label": "partial",
+          "issue": "The claim that the 'average VAT paid per item is $215.49' is mathematically incorrect (actual line-item average: $214.77)."
+        },
+        {
+          "insight": 3,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 4,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 5,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 6,
+          "label": "factual",
+          "issue": null
+        },
+        {
+          "insight": 7,
+          "label": "factual",
+          "issue": null
+        }
+      ],
+      "completeness_score": 47,
+      "accuracy_score": 71,
+      "score": 59
+    },
+    "quality": {
+      "explanation": "The insights are exceptionally clear and specific, utilizing concrete data points, names, and calculated percentages from the invoice. The content covers various angles, from tax analysis to client profiling. While there is minor thematic overlap between a few points and some insights lean towards restatement, the overall analysis provides a valuable interpretation of the transaction's scale and nature.",
+      "clarity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "specificity": {
+        "label": "excellent",
+        "score": 4
+      },
+      "diversity": {
+        "label": "good",
+        "score": 3
+      },
+      "actionability": {
+        "label": "good",
+        "score": 3
+      },
+      "score": 3.5
+    },
+    "parsing_consistency": {
+      "explanation": "The reconciliation process involved a detailed comparison of all key data points including invoice headers, seller/client details, line items, and financial summaries. 1. Header Information: Both sources correctly identified the Invoice Number (52335893) and Date of Issue (09/30/2012). 2. Entity Details: Both sources agreed on the seller (Stanley Group) and client (Mcbride-Sanchez), including their respective addresses, Tax IDs, and the seller's IBAN. While the OCR extraction (Source B) occasionally lacked spaces in the addresses (e.g., '5487RichardTrack' vs '5487 Richard Track'), these are considered minor formatting variations and thus valid matches. 3. Line Items: All 7 line items were present in both extractions. Quantitative fields (Quantity, Net Price, Net Worth, VAT %, and Gross Worth) were identical. Text descriptions contained minor OCR artifacts in Source B (word concatenation) but conveyed the same item data. 4. Totals: All summary values (Net Worth, VAT, Gross Worth) and the final calculated totals ($15,034.23, $1,503.42, $16,537.65) matched perfectly across both sources.",
+      "fields_compared": [
+        "invoice_number",
+        "date_of_issue",
+        "seller_name",
+        "seller_address",
+        "seller_tax_id",
+        "seller_iban",
+        "client_name",
+        "client_address",
+        "client_tax_id",
+        "line_item_1_description",
+        "line_item_1_net_worth",
+        "line_item_2_description",
+        "line_item_2_net_worth",
+        "line_item_3_description",
+        "line_item_3_net_worth",
+        "line_item_4_description",
+        "line_item_4_net_worth",
+        "line_item_5_description",
+        "line_item_5_net_worth",
+        "line_item_6_description",
+        "line_item_6_net_worth",
+        "line_item_7_description",
+        "line_item_7_net_worth",
+        "summary_net_worth",
+        "summary_vat_amount",
+        "summary_gross_worth"
+      ],
+      "matches": [
+        {
+          "field": "invoice_number",
+          "value": "52335893"
+        },
+        {
+          "field": "date_of_issue",
+          "value": "09/30/2012"
+        },
+        {
+          "field": "seller_name",
+          "value": "Stanley Group"
+        },
+        {
+          "field": "seller_address",
+          "value": "5487 Richard Track Suite 480, South Joseph, NC 41730"
+        },
+        {
+          "field": "seller_tax_id",
+          "value": "921-84-3512"
+        },
+        {
+          "field": "seller_iban",
+          "value": "GB67VRGE08714906088983"
+        },
+        {
+          "field": "client_name",
+          "value": "Mcbride-Sanchez"
+        },
+        {
+          "field": "client_address",
+          "value": "48923 Dominguez Locks Apt. 317, Sarahberg, LA 20147"
+        },
+        {
+          "field": "client_tax_id",
+          "value": "986-75-5185"
+        },
+        {
+          "field": "line_item_1_net_worth",
+          "value": "38,98"
+        },
+        {
+          "field": "line_item_2_net_worth",
+          "value": "9,98"
+        },
+        {
+          "field": "line_item_3_net_worth",
+          "value": "354,16"
+        },
+        {
+          "field": "line_item_4_net_worth",
+          "value": "59,80"
+        },
+        {
+          "field": "line_item_5_net_worth",
+          "value": "145,20"
+        },
+        {
+          "field": "line_item_6_net_worth",
+          "value": "14 400,00"
+        },
+        {
+          "field": "line_item_7_net_worth",
+          "value": "26,11"
+        },
+        {
+          "field": "summary_net_worth",
+          "value": "15 034,23"
+        },
+        {
+          "field": "summary_vat_amount",
+          "value": "1 503,42"
+        },
+        {
+          "field": "summary_gross_worth",
+          "value": "16 537,65"
+        }
+      ],
+      "mismatches": [],
+      "score": 100
+    },
+    "overall_score": 79.85
+  }
+}
