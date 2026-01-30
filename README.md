@@ -39,3 +39,9 @@ python tests/run_all.py
 # Web UI
 streamlit run streamlit_app.py
 ```
+
+
+## Results
+
+The results generated from the implementation are included in this repository for reference.
+
